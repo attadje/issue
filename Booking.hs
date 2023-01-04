@@ -1,14 +1,14 @@
-{-# LANGUAGE DataKinds           #-}  --Enable datatype promotions
+{-# LANGUAGE DataKinds           #-}  
 {-# LANGUAGE DeriveGeneric       #-}
-{-# LANGUAGE FlexibleContexts    #-}  --Enable flexible contexts. Implied by ImplicitParams
-{-# LANGUAGE NoImplicitPrelude   #-}  --Don't load native prelude to avoid conflict with PlutusTx.Prelude
-{-# LANGUAGE ScopedTypeVariables #-}  --Enable lexical scoping of type variables explicit introduced with forall
-{-# LANGUAGE TemplateHaskell     #-}  --Enable Template Haskell splice and quotation syntax
-{-# LANGUAGE TypeApplications    #-}  --Allow the use of type application syntax
-{-# LANGUAGE TypeFamilies        #-}  --Allow use and definition of indexed type and data families
-{-# LANGUAGE TypeOperators       #-}  --Allow the use and definition of types with operator names
+{-# LANGUAGE FlexibleContexts    #-} 
+{-# LANGUAGE NoImplicitPrelude   #-}  
+{-# LANGUAGE ScopedTypeVariables #-} 
+{-# LANGUAGE TemplateHaskell     #-}  
+{-# LANGUAGE TypeApplications    #-}  
+{-# LANGUAGE TypeFamilies        #-} 
+{-# LANGUAGE TypeOperators       #-}  
 {-# LANGUAGE DeriveAnyClass      #-}
-{-# LANGUAGE OverloadedStrings   #-}  -- Covert the string in the 
+{-# LANGUAGE OverloadedStrings   #-}  
 
 module Booking where
 
@@ -21,11 +21,11 @@ import           Plutus.Contract
 -- Ledger 
 import           Ledger                         hiding (singleton)
 import           Ledger.Address              
-import           Ledger.Constraints             as Constraints            -- Same library name, different functions for V1 and V2 in some cases
+import           Ledger.Constraints             as Constraints            
 -- Plutus
 import qualified Plutus.V2.Ledger.Api           as PlutusV2             
 import           Plutus.Script.Utils.V2.Typed.Scripts as TypedScriptsV2   
-import           Plutus.Script.Utils.V2.Scripts as ScriptsV2             -- New library name for Typed Validators and some new fuctions
+import           Plutus.Script.Utils.V2.Scripts as ScriptsV2             
 import           Ledger.Ada                     as Ada 
 import           Plutus.V2.Ledger.Contexts      as ContextV2
 import           PlutusTx.Builtins.Class        as Class
